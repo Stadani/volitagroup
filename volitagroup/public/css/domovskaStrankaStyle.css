@@ -16,4 +16,98 @@ body {
 .navbar-toggler {
     border: none;
 }
+.carousel{
+    margin-top: 15px;
+    max-width: 70%;
+    justify-items: center;
+}
+.carousel-container {
 
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: relative;
+    max-height: 600px;
+}
+.carousel-indicators .button {
+    width: 100px;
+    height: 5px;
+    border-radius: 20px;
+}
+.carousel-indicators .active {
+    background-color: orange
+}
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0));
+}
+.carousel-container img{
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    max-width: 100%;
+    width: 80%;
+}
+
+.carousel-caption div {
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.carousel-caption h6 {
+    margin-top: 10%;
+}
+.carousel-caption span{
+    color: orange;
+}
+.carousel-item button {
+    background-color: orange;
+    color: white;
+}
+.carousel-item button:hover {
+    background-color: orangered;
+}
+
+.carousel-indicators {
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .carousel-caption div {
+        font-size: large;
+    }
+    .carousel-caption h6 {
+        font-size: medium;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption div {
+        font-size: medium;
+    }
+    .carousel-caption h6 {
+        font-size: small;
+    }
+    .carousel-item button {
+        font-size: small;
+    }
+    .carousel-caption {
+        top: 30%;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+}
