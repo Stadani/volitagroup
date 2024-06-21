@@ -1,0 +1,19 @@
+body {
+
+}
+.navbar {
+    background-color: #1b48fa;
+    font-weight: bold;
+
+}
+.container-fluid {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.nav-link {
+    color: white;
+}
+.navbar-toggler {
+    border: none;
+}
+
