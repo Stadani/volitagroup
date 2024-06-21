@@ -1,6 +1,21 @@
-body {
-
+.content-container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+.main-text {
+    margin-top: 50px;
+    color: orange;
+    font-weight: bold;
+    font-size: large;
+}
+.sub-text {
+    color: #1b48fa;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
 .navbar {
     background-color: #1b48fa;
     font-weight: bold;
@@ -16,13 +31,13 @@ body {
 .navbar-toggler {
     border: none;
 }
+
+/*carousel*/
+
 .carousel{
     margin-top: 15px;
-    max-width: 70%;
-    justify-items: center;
 }
 .carousel-container {
-
     display: flex;
     justify-content: center;
 }
@@ -48,7 +63,11 @@ body {
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0));
 }
-.carousel-container img{
+.carousel-item img{
+    border-radius: 10px;
+}
+
+.carousel-inner {
     border-radius: 10px;
 }
 
@@ -110,4 +129,30 @@ body {
     .carousel-indicators {
         display: none;
     }
+}
+
+/*activities*/
+
+.card-group {
+    margin-top: 20px;
+}
+.card-group .card {
+    margin: 15px;
+    border: none;
+}
+.card-footer {
+    border: none;
+}
+.card-img-top {
+    max-width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card-footer button {
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+}
+.card-footer button:hover {
+    background-color: orangered;
 }

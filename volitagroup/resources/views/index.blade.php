@@ -14,20 +14,45 @@
 
 
     </head>
-    <body>
+    <body style="
+    background:
+        url('{{ asset('images/background-1.jpg') }}') no-repeat center center fixed,
+        linear-gradient(to top, rgba(27, 72, 250, 1), rgba(27, 72, 250, 1)),
+        url('{{ asset('images/background-2.jpg') }}') no-repeat center center fixed;
+    background-size: auto, auto, auto;
+">
+
         <div>
             <x-navbar>
             </x-navbar>
         </div>
-        <div>
-            <div class="carousel-container">
-                <x-carousel>
-                </x-carousel>
+        <div class="content-container">
+            <div>
+                 <x-carousel>
+                 </x-carousel>
+            </div>
+
+            <div>
+                <div class="main-text">
+                    Naše aktivity
+                </div>
+                <div class="sub-text">
+                    Zameriavame sa na nasledovné
+                </div>
+                <x-ourActivities>
+                </x-ourActivities>
+            </div>
+
+            <div>
+                <div class="main-text">
+                    Novinky
+                </div>
+                <div class="sub-text">
+                    Blog
+                </div>
+                <x-news>
+                </x-news>
             </div>
         </div>
-
-
-
-
     </body>
 </html>
