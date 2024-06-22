@@ -111,7 +111,7 @@
                 <div class="main-text">
                     Partneri
                 </div>
-                <div class="sub-text">
+                <div class="sub-text mb-4">
                     Naši partneri
                 </div>
                 <x-ourPartners>
@@ -126,6 +126,18 @@
         </div>
     </body>
 <footer>
-
+    <div class="footer-container">
+        <div>
+            <p><a href="">O nás</a></p>
+            <p><a href="">Blog</a></p>
+        </div>
+        <div>
+            <img src="{{ asset('images/logo-eao.svg') }}" alt="logo">
+        </div>
+        <div>
+            <p><a href="">Programy</a></p>
+            <p><a href="">Žiadosti</a></p>
+        </div>
+    </div>
 </footer>
 </html>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="{{ asset('images/logo-eao.svg') }}" alt="logo">

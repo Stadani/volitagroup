@@ -17,7 +17,7 @@
     border: 3px solid orangered;
 }
 .main-text {
-    margin-top: 50px;
+    margin-top: 5rem;
     color: orange;
     font-weight: bold;
     font-size: large;
@@ -147,7 +147,8 @@
 /*activities*/
 
 .card-group {
-    margin-top: 20px;
+
+
 }
 .card-group .card {
     margin: 15px;
@@ -305,7 +306,7 @@
     flex-direction: row;
     text-align: left;
 
-    margin-top: 5rem;
+    /*margin-top: 5rem;*/
     max-width: 100%;
     align-items: center;
 }
@@ -383,4 +384,22 @@
 .partner-text button{
     background-color: #1b48fa;
     font-weight: bold;
+    margin-bottom: 10rem;
+}
+footer {
+    background-color: #18181b;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    gap: 3rem;
+    color: white;
+    font-weight: bold;
+
+}
+.footer-container a{
+    text-decoration: none;
+    color: white;
 }
