@@ -21,7 +21,7 @@
             .background {
                 position: absolute;
                 width: 100%;
-                height: 33.333%; /* Each background covers 1/3 of the viewport height */
+                height: 33.333%;
                 background-size: cover;
                 background-attachment: fixed;
                 background-repeat: no-repeat;
@@ -85,6 +85,47 @@
                 <x-aboutUs>
                 </x-aboutUs>
             </div>
+
+            <div>
+                <div class="main-text">
+                    Partneri
+                </div>
+                <div class="sub-text">
+                    Zakladatelia EAO
+                </div>
+                <x-partners>
+                </x-partners>
+            </div>
+
+            <div>
+                <div class="main-text">
+                    Partneri
+                </div>
+                <div class="sub-text">
+                    Generálny partner
+                </div>
+                <img src="{{ asset('images/logo-volita.svg') }}">
+            </div>
+
+            <div>
+                <div class="main-text">
+                    Partneri
+                </div>
+                <div class="sub-text">
+                    Naši partneri
+                </div>
+                <x-ourPartners>
+                </x-ourPartners>
+                <div class="partner-text">
+                    <p>Etiam ipsum lacus, vehicula eu porttitor in, eleifend quis purus. Sed a nibh condimentum quam cursus eleifend.</p>
+                    <p>Nam eleifend sem dolor, eu sodales tortor ullamcorper at. Curabitur a mauris sodales, interdum ipsum vitae, posuere tellus.</p>
+                    <button class="btn btn-primary px-4">CHCETE SA STAŤ PARTNEROM?</button>
+                </div>
+            </div>
+
         </div>
     </body>
+<footer>
+
+</footer>
 </html>

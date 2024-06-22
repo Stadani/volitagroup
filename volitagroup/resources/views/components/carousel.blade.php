@@ -1,11 +1,11 @@
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
+<div id="carouselExampleCaptions" class="carousel carousel1 slide">
+    <div class="carousel-indicators carousel-indicators1">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active button" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="button" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
+    <div class="carousel-inner carousel-inner1">
+        <div class="carousel-item carousel-item1 active">
             <img src="{{ asset('images/banner-background.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption">
                 <div>Ako dopadol <span> Crashtest</span></div>
@@ -13,7 +13,7 @@
                 <button class="btn">Prejsť na video</button>
             </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carousel-item1">
             <img src="{{ asset('images/banner-background.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <div>Ako dopadol <span> Crashtest</span></div>
@@ -21,7 +21,7 @@
                 <button class="btn">Prejsť na video</button>
             </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carousel-item1">
             <img src="{{ asset('images/banner-background.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <div>Ako dopadol <span> Crashtest</span></div>
