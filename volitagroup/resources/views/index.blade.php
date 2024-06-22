@@ -13,16 +13,42 @@
         <link rel="stylesheet" href="{{ asset('css/domovskaStrankaStyle.css') }}">
 
 
+        <style>
+
+            body {
+                position: relative;
+            }
+            .background {
+                position: absolute;
+                width: 100%;
+                height: 33.333%; /* Each background covers 1/3 of the viewport height */
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            .background:nth-child(1) {
+                top: 0;
+                background-image: url('{{ asset('images/background-1.jpg') }}');
+            }
+
+            .background:nth-child(2) {
+                top: 33.333%;
+                background-color: #1b48fa;
+            }
+
+            .background:nth-child(3) {
+                top: 66.666%;
+                background-image: url('{{ asset('images/background-2.jpg') }}');
+            }
+        </style>
 
     </head>
-    <body style="
-    background:
-        url('{{ asset('images/background-1.jpg') }}') no-repeat center center fixed,
-        linear-gradient(to top, rgba(27, 72, 250, 1), rgba(27, 72, 250, 1)),
-        url('{{ asset('images/background-2.jpg') }}') no-repeat center center fixed;
-    background-size: auto, auto, auto;
-">
-
+    <body>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background "></div>
         <div>
             <x-navbar>
             </x-navbar>
@@ -53,6 +79,11 @@
                 </div>
                 <x-news>
                 </x-news>
+            </div>
+
+            <div>
+                <x-aboutUs>
+                </x-aboutUs>
             </div>
         </div>
     </body>

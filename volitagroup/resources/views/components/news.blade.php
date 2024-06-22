@@ -1,4 +1,5 @@
-<div class="row">
+<div class="news-container">
+<div class="row mb-5">
     <div class="col-lg-6 tall-card">
         <div class="card-news-tall-card"  style="background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)), url('{{ asset('images/blog-1.jpg') }}')">
             <h2 >Novinky</h2>
@@ -51,4 +52,5 @@
         </div>
     </div>
 </div>
-
+    <button class="btn btn-primary general-button">Prejsť na blog</button>
+</div>

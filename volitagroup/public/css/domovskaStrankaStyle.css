@@ -4,6 +4,18 @@
     margin-right: auto;
     text-align: center;
 }
+.general-button{
+    background-color: #1b48fa;
+    border: 3px solid orange;
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.general-button:hover{
+    background-color: orangered;
+    border: 3px solid orangered;
+}
 .main-text {
     margin-top: 50px;
     color: orange;
@@ -157,8 +169,16 @@
 .card-footer button:hover {
     background-color: orangered;
 }
+@media (max-width: 1200px) {
+    .card-group {
+        flex-direction: column;
+    }
+}
 
 /*news*/
+.news-container{
+    max-width: 100%;
+}
 .card-body {
     padding: 20px;
 }
@@ -276,4 +296,41 @@
     .card-news img {
         max-height: 150px;
     }
+}
+
+/*about us*/
+
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    margin-top: 5rem;
+    max-width: 100%;
+    align-items: center;
+}
+.about-us-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.about-us-container .text {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .about-us-container{
+        flex-direction: column;
+    }
+    .about-us-container img {
+        width: 100%;
+    }
+
+    .about-us-container .text {
+        width: 100%;
+    }
+
 }
